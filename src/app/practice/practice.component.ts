@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <hr>
     <input [(ngModel)]="name" type="text">
     {{name}}
+    <h5>Structural Directives (ad/remove HTML elements)</h5>
   
   `,
   styles: [`
