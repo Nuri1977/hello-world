@@ -20,7 +20,11 @@ import { Component, OnInit } from '@angular/core';
         <div *ngSwitchCase="'red'">You picked red color</div>
         <div *ngSwitchCase="'blue'">You picked blue color</div>
         <div *ngSwitchCase="'green'">You picked green color</div>
-        <div *ngSwitchDefault>Pick again</div>
+        <div *ngSwitchDefault>Pick again ngSwitch</div>
+      </div>
+    <hr>
+      <div *ngFor="let tech of technologies; index as i">
+        <h5>{{i}} {{tech}}</h5>
       </div>
   `,
   styles: [`
@@ -32,6 +36,7 @@ export class PracticeComponent implements OnInit {
   public name="";
   displayName = false;
   public color= "orange";
+  public technologies = ["angular", "react", "vue", "vanila-js"]; 
 
   constructor() { }
 
