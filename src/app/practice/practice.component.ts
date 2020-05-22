@@ -2,10 +2,19 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-practice',
-  templateUrl: './practice.component.html',
-  styleUrls: ['./practice.component.css']
+  template: `
+    <hr>
+    <input [(ngModel)]="name" type="text">
+    {{name}}
+  
+  `,
+  styles: [`
+  
+  `]
 })
 export class PracticeComponent implements OnInit {
+
+  public name="";
 
   constructor() { }
 
