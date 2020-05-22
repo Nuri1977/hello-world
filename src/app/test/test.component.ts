@@ -10,6 +10,10 @@ import { Component, OnInit } from '@angular/core';
     <h2 [class]="greenClass">Angular class binding</h2>
     <h2 [class.text2]="hasError"> Conditional class binding</h2>
     <h2 [ngClass]="messageClasses">ngClass example</h2>
+    <h3 [style.color]="'orange'">style binding</h3>
+    <h3 [style.color]="hasError ? 'red' : 'green'">Conditional style binding</h3>
+    <h3 [style.color]="highlightColor">style binding 2</h3>
+    <h1 [ngStyle]="titleStyles">ng Style directive</h1>
   `,
   styles: [`
     .text1 {
@@ -34,6 +38,11 @@ export class TestComponent implements OnInit {
     "text1": !this.hasError,
     "text2": this.hasError,
     "text-special": this.isSpecial
+  }
+  public highlightColor = "orange";
+  public titleStyles = {
+    color: "blue",
+    fontStyle: "italic"
   }
 
   constructor() { }
