@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
     <div>{{name.length}}</div>
     <div>{{name.toLocaleUpperCase()}}</div>
     <h3>{{greetUser()}}</h3>
-    <h2>{{siteUrl}}</h2>
+    <h2 class="mb-5">{{siteUrl}}</h2>
+    <button (click)="onClick($event)">Greet</button>
+    <button (click)="greeting='Welcome Nuri'">Greet1</button>
+    {{greeting}}
 
             
   `,
@@ -25,6 +28,7 @@ export class ProductComponent implements OnInit {
 
   public name = "vishwas";
   public siteUrl = window.location.href;
+  public greeting = "";
   constructor() { }
 
   ngOnInit(): void {
@@ -32,6 +36,11 @@ export class ProductComponent implements OnInit {
 
   greetUser() {
     return "Hello " + this.name;
+  }
+
+  onClick(event) {
+    console.log(event);
+    this.greeting = 'Welcome to Codevolution';
   }
 
 }

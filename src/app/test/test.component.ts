@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-test',
   template: `
     <input [id]="myId"  type="text" value="Nuri" class="m-3">
-    <input [disabled]="isDisabled" id={{myId}}  type="text" value="Nuri" class="m-3">
-    <input bind-disabled="isDisabled" id={{myId}}  type="text" value="Nuri" class="m-3">
+    <input [disabled]="isDisabled"  type="text" value="Nuri" class="m-3">
+    <input bind-disabled="isDisabled"  type="text" value="Nuri" class="m-3">
     <h2 class="text1">Codevolution</h2>
     <h2 [class]="greenClass">Angular class binding</h2>
     <h2 [class.text2]="hasError"> Conditional class binding</h2>
