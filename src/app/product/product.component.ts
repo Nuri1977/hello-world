@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: [` 
     div {
-      color: red;
+      color: grey;
     }
 
     h2 {
