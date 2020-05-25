@@ -1,4 +1,26 @@
 <hr>
-<h3 class="bg-primary">15-Component Interaction</h3>
-<h6>{{name1}} - data from app (parent) component</h6>
-<button (click)="fireEvent()">Send Event</button>
+  <h3 class="bg-primary">15-Component Interaction</h3>
+  <h6>{{name1}} - data from app (parent) component</h6>
+  <button (click)="fireEvent()">Send Event</button>
+<hr>
+  <h3 class="bg-primary">16-Pipes</h3>
+  <h6>{{emri}}</h6>
+  <h6>{{emri | lowercase}}</h6>
+  <h6>{{emri | uppercase}}</h6>
+  <h6>{{mesazh | titlecase}}</h6>
+  <h6>{{emri | slice:4}}</h6>
+  <h6>{{emri | slice:4:6}}</h6>
+  <h6>{{personazh | json}}</h6>
+  <h6>{{numer | number:'1.2-3' }}</h6>
+  <h6>{{numer | number:'3.4-5' }}</h6>
+  <h6>{{numer | number:'3.1-2' }}</h6>
+  <h6>{{0.25 | percent }}</h6>
+  <h6>{{numer | currency }}</h6>
+  <h6>{{numer | currency: 'GBP' }}</h6>
+  <h6>{{numer | currency: 'EUR' }}</h6>
+  <h6>{{numer | currency: 'GBP': 'code' }}</h6>
+  <h6>{{date | date:'short' }}</h6>
+  <h6>{{date | date:'shortDate' }}</h6>
+  <h6>{{date | date:'shortTime' }}</h6>
+  <h6>{{date | date:'medium' }}</h6>
+<hr>
