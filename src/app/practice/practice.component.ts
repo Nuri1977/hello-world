@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
         <div *ngSwitchCase="'green'">You picked green color</div>
         <div *ngSwitchDefault>Pick again ngSwitch</div>
       </div>
-    <hr>
+    <hr> ngFor Expamle
       <div *ngFor="let tech of technologies; index as i">
         <h5>{{i}} {{tech}}</h5>
       </div>
