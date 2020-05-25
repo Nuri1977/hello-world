@@ -1,8 +1,10 @@
 <div class="container">
-  <span>{{ title }} app is running!</span>
+  <h6>{{ title }} app is running!</h6>
+  <h6 class="bg-info">{{ message }} is message from Article component</h6>
     <app-test></app-test>
     <div app-product></div>
     <app-practice></app-practice>
+    <app-article (childEvent)="message=$event" [parentData]="name"></app-article>
 </div>
 
 

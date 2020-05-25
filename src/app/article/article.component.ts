@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
+  @Input('parentData') public name1;
+  @Output() public childEvent = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  fireEvent() {
+    this.childEvent.emit('Hey Codevolution');
+  }  
 }
